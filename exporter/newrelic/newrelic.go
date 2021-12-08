@@ -5,7 +5,7 @@ import (
 	"errors"
 	"log"
 
-	opencensus "github.com/devopsfaith/krakend-opencensus"
+	opencensus "github.com/jimmytuc/krakend-opencensus"
 	newrelic "github.com/newrelic/newrelic-opencensus-exporter-go/nrcensus"
 )
 

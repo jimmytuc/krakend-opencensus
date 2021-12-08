@@ -232,14 +232,14 @@ type DataDogConfig struct {
 	DisableCountPerBuckets bool                   `json:"disable_count_per_buckets"`
 }
 
-type NewRelicConfig struct{
+type NewRelicConfig struct {
 	ServiceName            string `json:"service_name"`
 	NewRelicInsightsApiKey string `json:"new_relic_insights_api_key"`
 }
 
 const (
 	ContextKey = "opencensus-request-span"
-	Namespace  = "github_com/devopsfaith/krakend-opencensus"
+	Namespace  = "github_com/jimmytuc/krakend-opencensus"
 )
 
 var (

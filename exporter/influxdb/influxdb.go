@@ -6,12 +6,12 @@ import (
 	"log"
 	"time"
 
-	opencensus "github.com/devopsfaith/krakend-opencensus"
+	opencensus "github.com/jimmytuc/krakend-opencensus"
 	influxdb "github.com/kpacha/opencensus-influxdb"
 )
 
 func init() {
-	log.Println("newrelic.init")
+	log.Println("influxdb.init")
 	opencensus.RegisterExporterFactories(func(ctx context.Context, cfg opencensus.Config) (interface{}, error) {
 		return Exporter(ctx, cfg)
 	})
