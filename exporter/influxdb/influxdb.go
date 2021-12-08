@@ -3,13 +3,15 @@ package influxdb
 import (
 	"context"
 	"errors"
+	"log"
 	"time"
 
 	opencensus "github.com/devopsfaith/krakend-opencensus"
-	"github.com/kpacha/opencensus-influxdb"
+	influxdb "github.com/kpacha/opencensus-influxdb"
 )
 
 func init() {
+	log.Println("newrelic.init")
 	opencensus.RegisterExporterFactories(func(ctx context.Context, cfg opencensus.Config) (interface{}, error) {
 		return Exporter(ctx, cfg)
 	})
