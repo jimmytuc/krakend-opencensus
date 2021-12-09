@@ -18,6 +18,7 @@ func init() {
 }
 
 func Exporter(ctx context.Context, cfg opencensus.Config) (*influxdb.Exporter, error) {
+	log.Println("influxdb.Exporter")
 	if cfg.Exporters.InfluxDB == nil {
 		return nil, errDisabled
 	}
